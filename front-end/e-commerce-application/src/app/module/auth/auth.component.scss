@@ -1,4 +1,17 @@
 #bgImg{
-    width: 500px; /* Adjust the percentage to resize as needed */
-    height: 500px; /* Maintain aspect ratio */
+    width: 100%; /* Adjust the percentage to resize as needed */
+    height: 100%; /* Maintain aspect ratio */
+}
+.sharp-corners {
+    border-radius:  2px;
+    padding:        0px;
+}
+.button-corners{
+    border-radius: 2px;
+}
+
+@media (max-width: 600px) {
+    .hide-on-mobile {
+       display: none;
+    }
 }

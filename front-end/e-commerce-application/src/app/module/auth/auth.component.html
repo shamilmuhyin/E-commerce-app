@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
         <div class="col-md-3">
           <div class="card">
@@ -32,16 +32,19 @@
           </div>
         </div>
     </div> 
-</div>
-<!-- <div class="container-fluid">
+</div> -->
+<div class="container-fluid">
   <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
-    <div class="col-md-6 card">
+    <div class="col-md-6 card sharp-corners">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-8">
+          <img class="hide-on-mobile" id="bgImg" src="assets\Data_security_01.jpg" alt="">
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
           <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
               <label for="username">Username</label>
-              <input type="text" class="form-control" id="username" formControlName="username">
+              <input type="text" class="form-control sharp-corners" id="username" formControlName="username">
               <small class="text-danger" *ngIf="loginForm.controls['username'].errors?.['required']">
                 Username is required
               </small>
@@ -51,7 +54,7 @@
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" class="form-control" id="password" formControlName="password">
+              <input type="password" class="form-control sharp-corners" id="password" formControlName="password">
               <small class="text-danger" *ngIf="loginForm.controls['password'].errors?.['required']">
                 Password is required
               </small>
@@ -59,20 +62,14 @@
                 Password must be at least 8 characters
               </small>
             </div>
-            <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">
+            <button type="submit" class="btn btn-primary button-corners" [disabled]="loginForm.invalid">
               Submit
             </button>
           </form>
         </div>
-        <div class="col-md-6">
-          <img id="bgImg" src="assets\bg-login.jpg" alt="">
-        </div>
       </div>
     </div>
-    <div class="col-md-4">
-      Heyyy
-    </div>
   </div>
-</div> -->
+</div>
 
 
